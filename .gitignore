@@ -1,0 +1,27 @@
+# 빌드 아티팩트
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.so
+*.pdb
+*.ilk
+*.ipdb
+*.iobj
+
+.vs/
+
+# Visual Studio 빌드 파일 무시
+*.tlog
+*.ilk
+*.idb
+*.pdb
+*.exe
+*.log
+*.recipe
+x64/
+
+# 솔루션 및 컴파일용 cpp 파일 미포함
+*.sln
+daily-ps/
