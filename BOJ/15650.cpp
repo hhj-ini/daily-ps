@@ -5,8 +5,6 @@ using namespace std;
 int N, M;
 
 int arr[10];
-bool isUsed[10];
-bool com[40];
 
 void func(int curr, int nm)
 {
@@ -19,11 +17,9 @@ void func(int curr, int nm)
 	}
 
 	for (int i = curr + 1; i <= N; ++i) {
-		if (!isUsed[i] && nm < i) {
+		if (nm < i) {
 			arr[curr] = i;
-			isUsed[i] = true;
 			func(curr + 1, i);
-			isUsed[i] = false;
 		}
 	}
 }
